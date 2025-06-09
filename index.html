@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <meta name="description"
+        content="Keshab's Portfolio - Web Developer, Project Gallery, Contact Info, Services and More">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Code With Keshab</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#80ed99">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1d8637">
+
+</head>
+
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)">
+                    <i class="fa-solid fa-user"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)">
+                    <i class="fa-solid fa-list"></i>
+                    <p>Services</p>
+                </li>
+                <li onclick="Navigate(3)">
+                    <i class="fa-solid fa-images"></i>
+                    <p>Project Gallery</p>
+                </li>
+                <li onclick="Navigate(4)" id="contact">
+                    <i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide" id="home">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">Keshab</span>,</h1>
+                        <h2>A <span class="proffesions">Web Developer...</span></h2>
+                        <p class="heroline">Learning, Building, Growing - One Project at a Time</p>
+                        <div class="buttonGroup">
+                            <button
+                                onclick="window.open('https://wa.me/916300197551?text=Hello%20Keshab%2C%20I%20want%20to%20hire%20you%20for%20a%20project.','_blank')">Hire
+                                Me</button>
+                            <button onclick="Navigate(4)">Contact Me</button>
+                        </div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="assets/portfoliophoto.png" alt="My Photo">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
+                </div>
+                <div class="swiper-slide about" id="about">
+                    <div class="about-us">
+                        <h1 class="heading">About Keshab</h1>
+                        <h3 class="sub-heading">I'm Keshab, <span class="proffessions">A Passionate Computer Science and
+                                Engineering Student</span></h3>
+                        <p class="aboutme-details">at Bonam Venkata Chalamayya Engineering College, Odalarevu, currently
+                            in 3rd year with a CGPA of <span>8.58</span>. I’m passionate about web development with
+                            hands-on experience in HTML, CSS, JavaScript, and UI design. Currently, I’m interning as a
+                            Web Developer at VirtuNexa and MicroIT, working on multiple real-time projects. I enjoy
+                            problem-solving, exploring creative ideas, and constantly learning and growing. Let’s build
+                            something amazing together</p>
+                        <div class="about-me-division">
+                            <ul class="about-me-table">
+                                <li><span>Experience:</span>Beginner</li>
+                                <li><span>Country:</span>India</li>
+                                <li><span>Availability:</span>24/7</li>
+                                <li><span>Satisfied Clients:</span>0</li>
+                                <li><span>Age:</span>19</li>
+                                <li><span>Phone:</span>+91 6300197551</li>
+                                <li><span>Language Used:</span>HTML</li>
+                                <li><span>Degree:</span>B.tech CSE</li>
+                                <li class="buttonGroup">
+                                    <button
+                                        onclick="window.open('https://wa.me/916300197551?text=Hello%20Keshab%2C%20I%20want%20to%20hire%20you%20for%20a%20project.','_blank')">Hire
+                                        Me</button>
+                                    <button onclick="Navigate(4)">Contact Me</button>
+                                </li>
+                            </ul>
+
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:85%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:50%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Java</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:25%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services" id="services">
+                    <h1 class="heading">Services</h1>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <p>Building responsive and user-friendly websites.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h2>Web Development</h2>
+                        <p>Creating interactive UIs using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h2>Bug Fixing</h2>
+                        <p>Improving website performance and fixing issues.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h2>Project Management</h2>
+                        <p>Plan, track, and deliver web projects smoothly.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h2>Hosting & Deployment</h2>
+                        <p>Deploy websites live on trusted platforms like GitHub Pages.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h2>Portfolio Creation</h2>
+                        <p>Designing sleek, professional portfolios for freelancer.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide gallery" id="projects">
+                    <h1 class="heading">Project Gallery</h1>
+                    <div class="project">
+                        <img src="assets/portfolio.png" alt="Project: Portfolio">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/portfolio.git" target="_blank">View Code <i
+                                    class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/portfolio/" target="_blank">Live Demo <i
+                                    class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>Portfolio</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/3D Card Flips.png" alt="Project: 3D Card Flips">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/VirtuNexa_Internship_Projects.git"
+                                target="_blank">View Code <i class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/VirtuNexa_Internship_Projects/"
+                                target="_blank">Live Demo <i class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>3D Card Flips</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/Factorial Calculator.png" alt="Project: Factorial Calculator">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/TASK-1.git" target="_blank">View Code <i
+                                    class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/TASK-1/" target="_blank">Live Demo <i
+                                    class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>Factorial Calculator</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/Appointment Scheduler.png" alt="Project: Appointment Scheduler">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/TASK-2.git" target="_blank">View Code <i
+                                    class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/TASK-2/" target="_blank">Live Demo <i
+                                    class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>Appointment Scheduler</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/to-do-list.png" alt="Project: To Do List">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/to-do-list.git" target="_blank">View Code <i
+                                    class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/to-do-list/" target="_blank">Live Demo <i
+                                    class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>To Do List</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/color-palette-generator.png" alt="Project: Color Palette Generator">
+                        <div class="overlay">
+                            <a href="https://github.com/keshabthapa2062/color-palette-generator.git"
+                                target="_blank">View Code <i class="fa-solid fa-file-code"></i> </a>
+                            <a href="https://keshabthapa2062.github.io/color-palette-generator/" target="_blank">Live Demo <i class="fa-solid fa-eye"></i> </a>
+                        </div>
+                        <p>Color Palette Generator</p>
+                    </div>
+                </div>
+                <div class="swiper-slide contactMe" id="contacts">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contacts">
+                        <div class="contactinfo">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3>Mobile No</h3>
+                            <p><a href="tel:+916300197551" target="_blank">+91 6300197551</a></p>
+                        </div>
+                        <div class="contactinfo">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>Location</h3>
+                            <p><a href="https://maps.app.goo.gl/gKksVkSVa4SWvQrZ6" target="_blank">BVC Boys Hostel, Odalarevu, 533210, AP</a></p>
+                        </div>
+                        <div class="contactinfo">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:keshabthapa850@gmail.com" target="_blank">keshabthapa850@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="contactinfo">
+                            <i class="fa-solid fa-globe"></i>
+                            <h3>Website</h3>
+                            <p><a href="https://keshabthapa2062.github.io/portfolio/" target="_blank">Code With Keshab</a>
+                            </p>
+                        </div>
+                    </div>
+                    <form action="https://formsubmit.co/keshabthapa850@gmail.com" method="POST" id="contactForm">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="contactLinks">
+                            <h2>Send Me A Message</h2>
+                            <div class="SocialLinks">
+                                <a href="https://github.com/keshabthapa2062" target="_blank"
+                                    aria-label="GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="http://www.linkedin.com/in/keshabthapa2062" target="_blank"
+                                    aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/m.me2062" target="_blank"
+                                    aria-label="Instagram Profile">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/916300197551?text=Hello,%20Keshab." target="_blank"
+                                    aria-label="WhatsApp Chat">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.facebook.com/m.me2062" target="_blank"
+                                    aria-label="Facebook Profile">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="email" id="email" placeholder="E-mail" required>
+                        <textarea name="message" id="message" rows="10"
+                            placeholder="Type your Message Here..."></textarea>
+                        <button class="primary" type="submit">Send</button>
+                    </form>
+                    <footer>
+                        <li>Copyright ©2025 Keshab.</li>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
