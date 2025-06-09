@@ -564,7 +564,7 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1024px) {
   main {
     display: flex;
     flex-direction: column;
