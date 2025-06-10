@@ -4,9 +4,9 @@ function initSwiper() {
   if (swiper) swiper.destroy(true, true);
 
   swiper = new Swiper(".mySwiper", {
-    effect: window.innerWidth < 786 ? "slide" : "cube",
-    direction: window.innerWidth < 786 ? "vertical" : "horizontal",
-    allowTouchMove: window.innerWidth < 786 ? true : false,
+    effect: window.innerWidth < 1100 ? "slide" : "cube",
+    direction: window.innerWidth < 1100 ? "vertical" : "horizontal",
+    allowTouchMove: window.innerWidth < 1100 ? true : false,
     grabCursor: false,
     cubeEffect: {
       shadow: true,
@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", () => {
       document.body.style.top = `-${scrollY}px`;
       swiper.disable();
       swiper.slideTo(4, 0);
-      if (window.innerWidth < 786) {
+      if (window.innerWidth < 1100) {
         setTimeout(() => {
           input.scrollIntoView({ behavior: "smooth", block: "center" });
         }, 300);
@@ -87,7 +87,7 @@ window.addEventListener("resize", () => {
   } else {
     swiper.disable();
     swiper.slideTo(4, 0);
-    if (window.innerWidth < 786) {
+    if (window.innerWidth < 1100) {
       document.activeElement.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
